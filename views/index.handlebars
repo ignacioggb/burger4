@@ -1,0 +1,44 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col-sm-6'>
+      <div class="container" id='not-dev'>
+        <h2>burgers to devour</h2>
+        <ol id='not-devList' class="list-group">
+          {{#each burgers}}
+            {{#unless devoured}}
+              {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+          {{/each}}
+          </ol>
+        </div>
+    </div>
+    <div class='col-sm-6'>
+      <div class="container" id='dev'>
+        <h2>burgers devoured!</h2>
+          <ol id='devList' class="list-group">
+            {{#each burgers}}
+              {{#if devoured}}
+                {{> burgers/burger-devoured-block devoured=false}}
+                {{/if}}
+              {{/each}}
+            </ol>
+        </div>
+      </div>
+    </div>
+  <div class='row'>
+      <div class="container" id='form'>
+        <h2>Add a Burger</h2>
+          <form class="create-form">
+            <div class="form-group">
+              <label for="ca">Burger Name:</label>
+              <input type="text" id="ca" name="name" class='form-control'>
+              </div>
+                      <button type="submit" class="btn btn-success">Add Burger</button>
+            </form>
+        </div>
+      </div>
+    </div>
+
+
+
+

@@ -1,0 +1,57 @@
+li {
+  padding: 5px;
+  font-size: x-large;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+body{
+
+  background-image: url('https://image.freepik.com/free-vector/burger-pattern_26536-20.jpg')
+}
+
+.jumbotron{
+  margin: auto 2rem;
+  padding: 1rem;
+
+}
+
+#dev{
+  margin: auto;
+background-color: lightyellow;
+}
+
+#not-dev{
+  margin: auto;
+background-color: lightyellow;
+}
+
+#form{
+background-color:  lightyellow;
+}
+
+.container{
+  margin: auto;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 3px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.display-4{
+  text-align: center;
+}
